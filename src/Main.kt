@@ -1,28 +1,28 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-//    While
-//    val s = "Kotlin"
-//    var i = 100
-//
-//    while (i > 0) {
-//        println(i)
-//
-//        i--
-//    }
 
-//    Do While
+// BREAK
 //    var i = 0
-//    do {
-//
-//        print("$i ")
+//    while (i < 10000000000) {
+//        if (i == 50) {
+//            break
+//        }
+//         print("$i ")
 //
 //        i++
-//    } while (i < 10)
+//    }
 
-    do {
-        print("Qual seu nome: ")
+//    CONTINUE
+    var i = 0
+    while (i < 80) {
+        if (i < 50) {
+            i++
+            continue
+        }
+        print("$i ")
 
-        val value = readlnOrNull()
-    } while (value == "")
+        i++
+    }
+
 }
